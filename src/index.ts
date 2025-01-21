@@ -2,6 +2,7 @@ import { PdfParser } from './pdfParser';
 import { OutputGenerator } from './outputGenerator';
 import { CityStats } from './types';
 import { ExcelOutputGenerator } from './excelOutputGenerator';
+import { CsvOutputGenerator } from './csvOutputGenerator';
 
 async function main() {
     // Récupération des arguments
@@ -41,8 +42,12 @@ async function main() {
         generator.generateOutput(biologyAssignments, cityStats, fromRank);
 
         // Génération du fichier Excel de sortie
-        const excelGenerator = new ExcelOutputGenerator();
-        await excelGenerator.generateOutput(year, biologyAssignments, cityStats, fromRank);
+        //const excelGenerator = new ExcelOutputGenerator();
+        //await excelGenerator.generateOutput(year, biologyAssignments, cityStats, fromRank);
+
+        // Génération du fichier CSV de sortie
+        const csvGenerator = new CsvOutputGenerator();
+        await csvGenerator.generateOutput(year, biologyAssignments, cityStats, fromRank);
 
         console.log(`Analyse terminée. Résultats disponibles dans output/resultats_${year}.txt`);
 

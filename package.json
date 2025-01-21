@@ -1,0 +1,21 @@
+{
+    "name": "medical-assignments",
+    "version": "1.0.0",
+    "description": "Analyse des affectations d'internes",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node src/index.ts"
+    },
+    "dependencies": {
+        "exceljs": "^4.3.0",
+        "pdf-parse": "^1.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "@types/pdf-parse": "^1.1.1",
+        "typescript": "^4.9.0",
+        "ts-node": "^10.9.0"
+    }
+}

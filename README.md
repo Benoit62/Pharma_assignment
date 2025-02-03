@@ -1,6 +1,6 @@
 Software for analyzing the distribution of biology pharmacy internships in different cities in France.
 
-It takes a assignment list file in entry, and will discredit biology based interships, to analyze their repartition around a precise rank.
+It takes an assignment list file in entry, and will discredit biology based interships, to analyze their repartition around a precise rank.
 
 ## Installation
 
